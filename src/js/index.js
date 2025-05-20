@@ -15,3 +15,6 @@ function mostrarMaisProjetos() {
         projetoInativo.classList.add('ativo');
     });
 }
+    function toggleContrast() {
+      document.body.classList.toggle('high-contrast');
+    }
