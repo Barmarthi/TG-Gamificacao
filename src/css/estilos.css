@@ -57,6 +57,43 @@ body{
     border-radius: 50px;
 } 
 
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer .voltar-topo {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer .voltar-topo:hover {
+  color: #ffffff;
+}
+
+.high-contrast .footer {
+  background-color: white;
+  color: black;
+  border-top: 1px solid black;
+}
+
+.high-contrast .footer .voltar-topo {
+  color: black;
+}
+
+.high-contrast .footer .voltar-topo:hover {
+  text-decoration: underline;
+}
+
+
+
 /* ----------------------------começo SEPARAÇÃO DE TESTE---------------------------- */
 
 
@@ -235,6 +272,21 @@ body{
 } */
 /* TALVEZ EXCLUIR, menos gradiente */
 
+.projeto {
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.projeto.ativo {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+
+
 .projetos{
     padding: 0px 0 70px;
 }
@@ -291,6 +343,12 @@ body{
     transition: 0.3s;
     padding: 20px;
 }
+
+.segundo-paragrafo {
+  margin-top: 250px;
+}
+
+
 
 .projetos .container-projetos .projeto:hover .informacoes-projeto{
     opacity: 0.7;
@@ -523,6 +581,7 @@ body{
 .high-contrast nav,
 .high-contrast section,
 .high-contrast .btn-jogos,
+.high-contrast .projetos h3,
 .high-contrast .categorias-atalho a h1,
 .high-contrast .resposta,
 .high-contrast .pergunta{
