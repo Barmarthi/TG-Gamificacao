@@ -15,6 +15,17 @@ function mostrarMaisProjetos() {
         projetoInativo.classList.add('ativo');
     });
 }
-    function toggleContrast() {
-      document.body.classList.toggle('high-contrast');
+
+  if (localStorage.getItem('contrasteAtivo') === 'true') {
+    document.documentElement.classList.add('high-contrast');
+  }
+
+  function toggleContrast() {
+    document.documentElement.classList.toggle('high-contrast');
+
+    if (document.documentElement.classList.contains('high-contrast')) {
+      localStorage.setItem('contrasteAtivo', 'true');
+    } else {
+      localStorage.setItem('contrasteAtivo', 'false');
     }
+  }

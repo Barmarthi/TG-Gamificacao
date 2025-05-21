@@ -14,6 +14,13 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+<script>
+  if (localStorage.getItem('contrasteAtivo') === 'true') {
+    document.documentElement.classList.add('high-contrast');
+  }
+</script>
+
+
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/estilos.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
@@ -27,12 +34,200 @@
             <a class="cabecalho__menu__link" href="jogos.html">Jogos</a>
             <a class="cabecalho__menu__link" href="impactos.html">Impactos</a>
             <a class="cabecalho__menu__link" href="faq.html">FAQ</a>
+
+                    <div class="logo">
+  <button onclick="toggleContrast()" id="btn-contraste" aria-label="Ativar ou desativar alto contraste">
+    <img src="./src/imagens/logorounded.png" alt="Ícone de contraste">
+  </button>
+</div>
+
         </nav>
-        <a href="#">
-            <h1 class="logo">BMT</h1>
-        </a>
     </header>
 
 
+
+
+<section class="beneficios-gamificacao">
+  <h2>Benefícios da Gamificação</h2>
+
+  <p class="intro">
+    A gamificação é uma abordagem que utiliza elementos de jogos em contextos educacionais e profissionais para tornar as experiências mais envolventes, motivadoras e eficazes. Abaixo estão alguns dos principais aspectos que podem ser significativamente aprimorados por meio da gamificação:
+  </p>
+
+  <ul>
+    <li>
+      <strong>🧠 Competências Cognitivas:</strong>
+      <ul>
+        <li>Estimula a memória e o raciocínio.</li>
+        <li>Promove a resolução de problemas.</li>
+        <li>Incentiva a tomada de decisões sob pressão.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>🎯 Foco:</strong>
+      <ul>
+        <li>Engajamento com metas claras.</li>
+        <li>Reforça a atenção com desafios.</li>
+        <li>Reduz distrações com feedback imediato.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>💡 Criatividade:</strong>
+      <ul>
+        <li>Incentiva soluções fora da caixa.</li>
+        <li>Permite estratégias próprias.</li>
+        <li>Promove liberdade para errar e aprender.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>🧩 Lógica:</strong>
+      <ul>
+        <li>Estimula o raciocínio analítico.</li>
+        <li>Exige planejamento e antecipação.</li>
+        <li>Trabalha com padrões e causa-efeito.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>🖐️ Coordenação Motora:</strong>
+      <ul>
+        <li>Melhora agilidade e precisão.</li>
+        <li>Treina tempo de reação.</li>
+        <li>Desenvolve coordenação olho-mão.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>📚 Capacidades Intelectuais:</strong>
+      <ul>
+        <li>Integra diferentes áreas do conhecimento.</li>
+        <li>Facilita a aprendizagem prática.</li>
+        <li>Estimula o pensamento crítico.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+
+<section class="beneficios-gamificacao-lista">
+  <!-- Tópico 1 -->
+  <div class="bloco-pergunta">
+    <p class="pergunta" onclick="mostrarResposta(this)">
+      🧠 Competências Cognitivas:
+      <span class="seta">&#9654;</span>
+    </p>
+    <div class="resposta">
+      <ul>
+        <li>Estimula a memória e o raciocínio.</li>
+        <li>Promove a resolução de problemas.</li>
+        <li>Incentiva a tomada de decisões sob pressão.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tópico 2 -->
+  <div class="bloco-pergunta">
+    <p class="pergunta" onclick="mostrarResposta(this)">
+      🎯 Foco:
+      <span class="seta">&#9654;</span>
+    </p>
+    <div class="resposta">
+      <ul>
+        <li>Engajamento com metas claras.</li>
+        <li>Reforça a atenção com desafios.</li>
+        <li>Reduz distrações com feedback imediato.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tópico 3 -->
+  <div class="bloco-pergunta">
+    <p class="pergunta" onclick="mostrarResposta(this)">
+      💡 Criatividade:
+      <span class="seta">&#9654;</span>
+    </p>
+    <div class="resposta">
+      <ul>
+        <li>Incentiva soluções fora da caixa.</li>
+        <li>Permite estratégias próprias.</li>
+        <li>Promove liberdade para errar e aprender.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tópico 4 -->
+  <div class="bloco-pergunta">
+    <p class="pergunta" onclick="mostrarResposta(this)">
+      🧩 Lógica:
+      <span class="seta">&#9654;</span>
+    </p>
+    <div class="resposta">
+      <ul>
+        <li>Estimula o raciocínio analítico.</li>
+        <li>Exige planejamento e antecipação.</li>
+        <li>Trabalha com padrões e causa-efeito.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tópico 5 -->
+  <div class="bloco-pergunta">
+    <p class="pergunta" onclick="mostrarResposta(this)">
+      🖐️ Coordenação Motora:
+      <span class="seta">&#9654;</span>
+    </p>
+    <div class="resposta">
+      <ul>
+        <li>Melhora agilidade e precisão.</li>
+        <li>Treina tempo de reação.</li>
+        <li>Desenvolve coordenação olho-mão.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tópico 6 -->
+  <div class="bloco-pergunta">
+    <p class="pergunta" onclick="mostrarResposta(this)">
+      📚 Capacidades Intelectuais:
+      <span class="seta">&#9654;</span>
+    </p>
+    <div class="resposta">
+      <ul>
+        <li>Integra diferentes áreas do conhecimento.</li>
+        <li>Facilita a aprendizagem prática.</li>
+        <li>Estimula o pensamento crítico.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+      <script>
+        function mostrarResposta(elementoPergunta) {
+          const resposta = elementoPergunta.nextElementSibling;
+          const seta = elementoPergunta.querySelector('.seta');
+          const isVisivel = resposta.style.display === 'block';
+    
+          // Se quiser ocultar as outras ao abrir uma, descomente essa parte
+          document.querySelectorAll('.resposta').forEach(r => r.style.display = 'none');
+          document.querySelectorAll('.seta').forEach(s => s.classList.remove('girada'));
+    
+          // Toggle visibilidade
+          if (!isVisivel) {
+            resposta.style.display = 'block';
+            seta.classList.add('girada');
+          } else {
+            resposta.style.display = 'none';
+            seta.classList.remove('girada');
+          }
+        }
+      </script>
+
+
+
+
+
+
+
+
+     <script src="./src/js/index.js"></script>
 </body>
 </html>

@@ -314,8 +314,10 @@ body{
 }
 
 .projetos .btn-mostrar-projetos:hover{
-    background-color: #010101;
+    background-color: #444242;
     transition: 0.3s;
+    border: 2px solid black;
+    transform: scale(1.1);
 }
 
 .projeto .btn-mostrar-projetos.remover {
@@ -377,7 +379,7 @@ body{
     transform: rotate(90deg);
   }
 
-  .resposta {
+  /* .resposta {
     display: none;
     font-size: 15px;
     line-height: 1.6;
@@ -387,8 +389,105 @@ body{
     background-color: #fff;
   }
 
+.resposta ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.resposta ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  font-size: 15px;
+} */
+
+.resposta {
+  display: none;
+  padding-top: 10px;
+  color: white;
+  animation: fadeIn 0.3s ease;
+}
+
+.resposta ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 16px;
+}
 
 
+.beneficios-gamificacao {
+  padding: 30px;
+  color: white;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+.beneficios-gamificacao h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.beneficios-gamificacao .intro {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.beneficios-gamificacao ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.beneficios-gamificacao li {
+  margin-bottom: 15px;
+}
+
+.beneficios-gamificacao li > strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.beneficios-gamificacao ul ul {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.high-contrast .beneficios-gamificacao {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+.faq {
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.faq h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.faq .intro {
+  font-size: 18px;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+
+
+
+                                      /* BOTÃO DE CONTRASTE ABAIXO */
+  
   /* Estilo do botão com imagem */
   #btn-contraste {
     background: none;
@@ -418,34 +517,36 @@ body{
     color: black;
   }
 
+
+.high-contrast body,
+.high-contrast header,
+.high-contrast nav,
+.high-contrast section,
+.high-contrast .btn-jogos,
+.high-contrast .categorias-atalho a h1,
+.high-contrast .resposta,
+.high-contrast .pergunta{
+  background-color: white;
+  color: black;
+}
+
+.high-contrast .container-foto {  /* Logo do site index */
+  filter: invert(100%);
+}
+
+
   /* Imagem com borda no modo contraste, opcional */
   .high-contrast #btn-contraste img {
     border: 2px solid white;
       filter: invert(100%);
   }
 
-
-.high-contrast .container-foto {
-  filter: invert(100%);
-}
-
-
-.high-contrast header {
-  background-color: white;
-  color: black;
-  border-bottom: 2px solid black;
-}
-
-.high-contrast nav {
-  background-color: white;
-  color: black;
-}
-
+/* 
 .high-contrast button {
   background-color: black;
   color: white;
   border: 1px solid black;
-}
+} */
 
 .high-contrast .btn-jogos {
    background-color: white;
@@ -460,6 +561,18 @@ body{
     transform: scale(1.1);
 }
 
+.high-contrast .btn-mostrar-projetos {
+   background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.high-contrast .btn-mostrar-projetos:hover{
+    background-color: #444242;
+    transition: 0.3s;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
 
 
 .high-contrast .categorias-atalho a h1 {
@@ -488,13 +601,9 @@ body{
   color: black;
 }
 
-/* Se quiser aplicar contraste a seções, rodapé etc. */
-.high-contrast section,
-.high-contrast footer {
-  background-color: white;
-  color: black;
+.high-contrast .informacoes-projeto {
+  color: white;
 }
-
 
 
 
