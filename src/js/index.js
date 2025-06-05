@@ -38,3 +38,5 @@ botaoMostrarProjetos.addEventListener('click', () => {
       localStorage.setItem('contrasteAtivo', 'false');
     }
   }
+
+  

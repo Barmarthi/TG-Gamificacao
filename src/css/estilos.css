@@ -655,7 +655,7 @@ body{
 }
 
 
-/* Se quiser estilizar links também */
+/*                       Se quiser estilizar links também */
 .high-contrast a {
   color: black;
 }
@@ -664,10 +664,30 @@ body{
   color: white;
 }
 
+/* CONTRASTE ATIVADO NO MENU MOBILE */
+.high-contrast .menu-toggle {
+  color: black;
+}
 
+/* Fundo branco para o menu aberto */
+.high-contrast .cabecalho .menu {
+  background-color: white;
+}
 
+/* Links visíveis em contraste */
+.high-contrast .cabecalho__menu__link {
+  color: black;
+  border-bottom: 1px solid #aaa;
+}
 
-
+/* Hover dos links no contraste */
+.high-contrast .cabecalho__menu__link:hover {
+  background-color: #ddd;
+  color: black;
+}
+.high-contrast .menu-toggle i {
+  color: black;
+}
 
 
 
