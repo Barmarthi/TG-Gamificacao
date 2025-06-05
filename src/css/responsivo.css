@@ -40,6 +40,25 @@
     }
 }
 
+/* Esconde o botão hamburguer no desktop */
+@media (min-width: 769px) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    .cabecalho .menu {
+      display: flex !important; /* garante visibilidade no desktop */
+      flex-direction: row;
+      gap: 80px;
+      background-color: transparent; /* se quiser tirar fundo do menu */
+    }
+  }
+  
+
+
+
+
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
