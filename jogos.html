@@ -26,24 +26,36 @@
 </head>
 <body>
     <!--------cabeçalho--->
-    <header class="cabecalho">
-      <button class="menu-toggle" aria-label="Abrir menu">
-        <i class="fas fa-bars"></i>
-      </button>
-    
-      <nav class="menu" id="menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="jogos.html">Jogos</a>
-        <a class="cabecalho__menu__link" href="beneficios.html">Benefícios</a>
-        <a class="cabecalho__menu__link" href="faq.html">FAQ</a>
-    
-        <div class="logo">
-          <button onclick="toggleContrast()" id="btn-contraste" aria-label="Ativar ou desativar alto contraste">
-            <img src="./src/imagens/logorounded.png" alt="Ícone de contraste">
-          </button>
-        </div>
-      </nav>
-    </header>
+          <header class="cabecalho">
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <!-- Fora do NAV, dentro do HEADER (para mobile) -->
+<div class="btn-contraste-mobile">
+  <button onclick="toggleContrast()" aria-label="Ativar ou desativar alto contraste">
+    <img src="./src/imagens/logorounded.png" alt="Ícone de contraste">
+  </button>
+</div>
+
+
+
+        <nav class="menu" id="menu">
+          <a class="cabecalho__menu__link" href="index.html">Home</a>
+          <a class="cabecalho__menu__link" href="jogos.html">Jogos</a>
+          <a class="cabecalho__menu__link" href="beneficios.html">Benefícios</a>
+          <a class="cabecalho__menu__link" href="faq.html">FAQ</a>
+      
+         <!-- Dentro do NAV (para desktop) -->
+<div class="logo btn-contraste-desktop">
+  <button onclick="toggleContrast()" aria-label="Ativar ou desativar alto contraste">
+    <img src="./src/imagens/logorounded.png" alt="Ícone de contraste">
+  </button>
+</div>
+
+        </nav>
+
+      </header>
 
     <!-- SEÇÃO DOS PROJETOS -->
     <section class="projetos" id="projetos">

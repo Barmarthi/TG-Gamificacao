@@ -56,6 +56,10 @@
   
 
 
+/* Esconde o botão mobile no desktop */
+.btn-contraste-mobile {
+  display: none;
+}
 
 
 
@@ -91,4 +95,56 @@
   .logo {
     margin-top: 10px;
   }
+
+
+.btn-contraste-desktop {
+    display: none !important;
+  }
+
+  .btn-contraste-mobile {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 999;
+  }
+
+  .btn-contraste-mobile button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+}
+
+
+.btn-contraste-mobile button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%; /* Deixa o botão redondo */
+  overflow: hidden; /* Garante que a imagem não vaze */
+}
+
+.btn-contraste-desktop button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.high-contrast .btn-contraste-desktop {
+    border: 2px solid black
+}
+
+
+.high-contrast .btn-contraste-desktop img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.high-contrast .btn-contraste-mobile img {
+  filter: invert(1) hue-rotate(180deg);
 }
